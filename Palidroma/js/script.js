@@ -1,5 +1,6 @@
 // VARIABILI
 const wordRequest = prompt("Scrivi un parola");
+
 // ESECUZIONE FUNZIONE
 if (isNaN(wordRequest)) {
     palindroma(wordRequest);
@@ -15,17 +16,18 @@ function palindroma(wordStr) {
     
     // Dichiarazione variabili
     const word = [];
-    const wordReverse = []; 
+    const wordReverse = [];
     let message = "";
     let wordReverseStr;
    
-    // Esecuzione ciclo per trasmormare in array e invertire la parola
+    // Esecuzione ciclo per trasformare in array e invertire la parola
     for (let i = 0; i < wordStr.length; i++) {
         word.push(wordStr[i]);
     }
     for (let i = wordStr.length - 1; i >= 0; i--) {
         wordReverse.push(wordStr[i]);
     }
+    
     
     // Passaggio per invertire l'array inverso in parola
     wordReverseStr = wordReverse.join("");
